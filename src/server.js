@@ -10,6 +10,7 @@ mongoose.connect("mongodb://localhost:27017/marvelapp", {
   useUnifiedTopology: true
 });
 
+server.use(express.json());
 server.use(routes);
 
 server.listen(3333);
